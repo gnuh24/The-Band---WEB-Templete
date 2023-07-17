@@ -1,55 +1,39 @@
 <!DOCTYPE html>
 <html>
-    
-    <head>
-        <title>
-            W3.CSS Temple
-        </title>         
-        <meta charset = "utf-8">
-        <link rel="stylesheet" href = "./assets/css/main.css" >
-        
-    </head>
-    
-    <body>
-        <div class="wrapper">
-            
 
-            <div class="header">
-                <ul class="navigation">
-                    <li> <a href ="#">  Home </a></li>
-                    <li> <a href ="#">  Band </a></li>
-                    <li> <a href ="#">  Tour </a></li>
-                    <li> <a href ="#">  Contact </a></li>
-                    <li> <a href ="#"> More  </a>
-                        
-                        <ul class="subnavi">
-                            <li> <a href ="#"></a>Merchandise </a></li>
-                            <li> <a href ="#"></a>Extras</a></li>
-                            <li> <a href ="#"> </a>Media</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+<head>
+    <title>The Band</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+</head>
 
-
-            <div class="slider">
-
-            </div>
-
-
-            <div class="container">
-                <div class="content1">
-
-                </div>
-            </div>
-
-
-            <div class="footer">
-
-            </div>
-
-
+<body>
+    <header class = "header">
+        <nav class = "header__navi">
+            <ul class = "navi--group__allChoice">
+                <li class = "navi--group__choice"><a href="#" class = "choice__text">Home</a></li>
+                <li class = "navi--group__choice"><a href="#" class = "choice__text">Band</a></li>
+                <li class = "navi--group__choice"><a href="#" class = "choice__text">Tour</a></li>
+                <li class = "navi--group__choice"><a href="#" class = "choice__text">Contact</a></li>
+                <li id = "special__choice" class = "navi--group__choice"><a href="#" class = "choice__text">More</a>
+                    <ul id = "more" class = "navi--group__allChoice navi--group__allSubChoice">
+                        <li class = "navi--group__choice navi--group__subChoice"><a href="#" class = "choice__text subChoice__text">Merchandise</a></li>
+                        <li class = "navi--group__choice navi--group__subChoice"><a href="#" class = "choice__text subChoice__text">Extras</a></li>
+                        <li class = "navi--group__choice navi--group__subChoice"><a href="#" class = "choice__text subChoice__text">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class = "header__find">
+                <a href = "#" class = "find__search"><i  class="fa-solid fa-magnifying-glass"></i></a>
         </div>
-    </body>
+    </header>
+    <div id = slider>
+        
+    </div>
+</body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </html>
