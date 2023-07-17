@@ -7,10 +7,12 @@
 
 /* Header */
 .header {
+    position: fixed;
     width: 100%;
     background-color: black;
     display: flex;
     justify-content: space-between;
+    z-index: 999;
 
 }
 
@@ -24,7 +26,7 @@
     display: block;
     text-decoration: none;
     color: white ;
-    padding: 12px 24px;
+    padding: 15px 24px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 15px;
@@ -65,7 +67,83 @@
 }
 
 .find__search{
-    padding: 12px 24px;
+    padding: 15px 24px;
     color: white !important;
 
 }
+
+/*Content*/
+.content {
+   position: relative;
+   top: 40px;
+}
+
+/* Slider*/
+
+.content__slider {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-image: url(../image/newYork.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation: slide 10s infinite;
+}
+
+.slider--content__group {
+    position: absolute;
+    left: 0; right: 0; 
+    bottom: 80px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider__content{
+    color: white;
+    margin: 10px 0px;
+}
+
+.slider__content--decription{
+    font-weight: bold;
+}
+/* Chuyển đổi content cho thẻ slider__content*/
+.slider__content--location::before, .slider__content--decription::before{
+    content: "";
+    animation: slide 10s infinite;
+
+}
+
+
+
+/* Animation cho slider*/
+@keyframes slide {
+    0%, 100% {
+        background-image: url(../image/newYork.jpg);
+        background-color: transparent;
+    
+        content: "New York";
+    
+        content: "The atmosphere in New York is lorem ipsum.";
+    }
+
+    25% {
+        background-image: url(../image/chicago.jpg);
+        background-color: transparent;
+  
+        content: "Chicago";
+
+        content: "Thank you, Chicago - A night we won't forget.";
+    }
+    
+    75% {
+        background-image: url(../image/la.jpg);
+        background-color: transparent;
+    
+        content: "Los Angeles";
+    
+        content: "We had the best time playing at Venice Beach!";
+    }
+}
+/* ----------Hết phần animation cho slider ---------*/ 
