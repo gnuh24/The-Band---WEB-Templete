@@ -13,7 +13,6 @@
     display: flex;
     justify-content: space-between;
     z-index: 999;
-
 }
 
 .navi--group__allChoice {
@@ -72,22 +71,30 @@
 
 }
 
+/* MAIN */
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
 /*Content*/
 .content {
-   position: relative;
-   top: 40px;
+    margin-top: 40px;
 }
+
+
+
 
 /* Slider*/
 
 .content__slider {
     width: 100vw;
     height: 100vh;
-    display: flex;
     background-image: url(../image/newYork.jpg);
     background-repeat: no-repeat;
+    animation: slide_image 10s infinite;
     background-size: 100%;
-    animation: slide 10s infinite;
+
 }
 
 .slider--content__group {
@@ -98,52 +105,140 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .slider__content{
     color: white;
     margin: 10px 0px;
 }
-
-.slider__content--decription{
-    font-weight: bold;
-}
-/* Chuyển đổi content cho thẻ slider__content*/
-.slider__content--location::before, .slider__content--decription::before{
+.slider__content::before{
     content: "";
-    animation: slide 10s infinite;
+    animation: slide_content 10s infinite;
 
 }
-
-
-
 /* Animation cho slider*/
-@keyframes slide {
+@keyframes slide_image {
     0%, 100% {
         background-image: url(../image/newYork.jpg);
-        background-color: transparent;
-    
-        content: "New York";
-    
-        content: "The atmosphere in New York is lorem ipsum.";
     }
 
     25% {
         background-image: url(../image/chicago.jpg);
-        background-color: transparent;
-  
-        content: "Chicago";
-
-        content: "Thank you, Chicago - A night we won't forget.";
     }
     
     75% {
         background-image: url(../image/la.jpg);
-        background-color: transparent;
+    }
+}
+
+@keyframes slide_content {
+    0%, 100% {
+        content: "New York";
+    }
+
+    25% {
+        content: "Chicago";
+    }
     
+    75% {
         content: "Los Angeles";
-    
-        content: "We had the best time playing at Venice Beach!";
     }
 }
 /* ----------Hết phần animation cho slider ---------*/ 
+
+
+/* MEMBER */
+.member {
+    width: 800px;
+    background-color: white;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+    padding: 0.01em 16px;
+    margin: 0 auto;
+}
+
+.member__ele {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+
+.member__title{
+    margin: 10px 0px;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+.member__subTitle{
+    font-size: 15px;
+    opacity: 0.60;
+    margin: 15px 0px;
+    font-style: italic;
+
+}
+
+.member__content{
+    display: block;
+    line-height: 1.6;
+    
+    font-size: 15px;
+    text-align: justify;
+}
+
+.member__listOfmember{
+    display:flex;
+    padding: 32px 0;
+}
+
+.listOfmember__ele{
+    display: block;
+    width: 33.33%;
+    text-align: center;
+}
+.listOfmember__ele > p{
+    margin: 15px 0;
+}
+
+.listOfmember__ele > img{
+    width: 60%;
+    margin: 0 0 16px;
+}
+/*___________________Kết thúc MEMBER___________________ */
+
+/* TOUR DATE */
+.tourDates{
+    background-color: black;
+    color: white;
+    order: 3;
+}
+
+.tourDates__content--around{
+    width: 800px;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.tourDates__content{
+    width: 100%;
+    text-align: center;
+}
+
+.tourDates__content--title{
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+.tourDates__content--slogan{
+    font-size: 15px;
+    margin: 15px 0;
+    opacity: 0.60;
+}
