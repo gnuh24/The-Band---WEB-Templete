@@ -13,8 +13,8 @@
         <nav class = "header__navi">
             <ul class = "navi--group__allChoice">
                 <li class = "navi--group__choice"><a href="#" class = "choice__text">Home</a></li>
-                <li class = "navi--group__choice"><a href="#" class = "choice__text">Band</a></li>
-                <li class = "navi--group__choice"><a href="#" class = "choice__text">Tour</a></li>
+                <li class = "navi--group__choice"><a href="#member" class = "choice__text">Band</a></li>
+                <li class = "navi--group__choice"><a href="#tourDates" class = "choice__text">Tour</a></li>
                 <li class = "navi--group__choice"><a href="#" class = "choice__text">Contact</a></li>
                 <li id = "special__choice" class = "navi--group__choice"><a href="#" class = "choice__text">More</a>
                     <ul id = "more" class = "navi--group__allChoice navi--group__allSubChoice">
@@ -32,7 +32,7 @@
 
     <main class = "main">
         
-        <div class = "main--content__group content">
+        <div class = "main--content__group content" id = "content">
             <div class = "content__slider content--slider__container1">
                 <div class = "slider--content__group ">
                     <h3 id = "newYork" class = "slider__content slider__content--location"></h3>
@@ -40,7 +40,7 @@
             </div>
         </div>
 
-        <div class = "main--content__group member">
+        <div class = "main--content__group member" id = "member">
             
                 <h2 class = "member__ele member__title">THE BAND</h2>
                 <div class = "member__ele member__subTitle">
@@ -71,7 +71,7 @@
            
         </div>
 
-        <div class = "main--content__group tourDates">
+        <div class = "main--content__group tourDates" id = "tourDates">
 
             <div class = "tourDates__content--around">
                 <h2 class = "tourDates__content tourDates__content--title">
@@ -83,13 +83,48 @@
                         Remember to book your tickets!
                     </i>
                 </div>
+                <br>
 
                 <ul class="tourDates__content tourDates__content--time">
-                    <li class="content__time">September</li>
-                    <li class="content__time">October</li>
-                    <li class="content__time">November</li>
+                    <li class="content__time content__time--special1">September</li>
+                    <li class="content__time content__time--special1">October</li>
+                    <li class="content__time content__time--special2" >November
+                        <span id = "time--specialElement">3</span>
+                    </li>
 
                 </ul>
+
+                <div class = "tourDates__content tourDates__content--location">
+                    <div class = "content__location content__location--newYork">
+                        <img src = "assets/image/newyork 2.jpg">
+                        <div class = "content__location--text location__newYork--text">
+                            <p class = "location__text--title text__title--newYork" >New York</p>
+                            <p class = "location__text--time ">Fri 27 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class = "location__text--button">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="content__location content__location--paris">
+                        <img src = "assets/image/paris.jpg">
+                        <div class = "content__location--text location__paris--text">
+                            <p class = "location__text--title text__title--paris">Paris</p>
+                            <p class = "location__text--time ">Sat 28 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class = "location__text--button">Buy Tickets</button>
+
+                        </div>
+                    </div>
+                    <div class="content__location content__location--sanFrancisco">
+                        <img src = "assets/image/sanfran.jpg">
+                        <div class = "content__location--text location__sanFrancisco--text">
+                            <p class = "location__text--title text__title--sanFrancisco">San Francisco</p>
+                            <p class = "location__text--time ">Sun 29 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class = "location__text--button">Buy Tickets</button>
+                        </div>
+
+                    </div>
+                </div>
 
                 
             </div>

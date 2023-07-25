@@ -150,7 +150,7 @@
 
 /* MEMBER */
 .member {
-    width: 800px;
+    width: 815px;
     background-color: white;
     order: 2;
     display: flex;
@@ -186,7 +186,7 @@
 .member__content{
     display: block;
     line-height: 1.6;
-    
+    margin: 15px 0;
     font-size: 15px;
     text-align: justify;
 }
@@ -208,6 +208,7 @@
 .listOfmember__ele > img{
     width: 60%;
     margin: 0 0 16px;
+    border-radius: 4px;
 }
 /*___________________Kết thúc MEMBER___________________ */
 
@@ -219,22 +220,24 @@
 }
 
 .tourDates__content--around{
-    width: 800px;
+    width: 815px;
     padding: 64px 16px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .tourDates__content{
-    width: 100%;
+    width: 766.4px;
     text-align: center;
 }
 
 .tourDates__content--title{
     margin: 10px 0;
     font-size: 30px;
+    letter-spacing: 4px;
 }
 
 .tourDates__content--slogan{
@@ -242,3 +245,115 @@
     margin: 15px 0;
     opacity: 0.60;
 }
+
+/* tourDates -> time */
+.tourDates__content--time{
+    list-style: none;
+    width: 768px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+}
+
+.content__time{
+    
+    padding: 8px 16px;
+    font-size: 15px;
+    background-color: white;  
+    color: black;
+    text-align: start;
+    border-bottom: 1px solid #ddd;
+    line-height: 1.5;
+}
+
+.content__time--special1::after{
+    content: "Sold out";
+    display: inline-block;
+    background: #f44336;
+    color: white;
+    margin: auto 0 auto 16px;
+    padding:  0 8px;
+    text-align: center;
+}
+
+.content__time--special2{
+    justify-content: center;
+    align-items: center;
+}
+
+#time--specialElement{
+    float: right;
+    margin: 0 16px 0 0;
+    padding: 0 8px;
+    border-radius: 50%;
+    color: white;
+    background: black;
+
+}
+/*___________Hết phần TOUR DATES -- TIme*/
+
+/*_____________________tourDates LOCATION_____________ */
+.tourDates__content--location{
+    width: 800px;
+    margin:0 -16px;
+    padding: 32px 8px;
+    display: flex;
+}
+
+.content__location{
+    width: 33.333%;
+    padding:0 8px;
+    margin-bottom: 16px !important;
+    object-fit: fill;
+}
+.content__location > img{
+    object-fit: fill;
+    width: 100%;
+}
+.content__location > img:hover{
+    opacity: 0.60;
+}
+
+.content__location--text{
+    color: black;
+    font-size: 15px;
+    background-color: white;
+    padding: 0.01em 16px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -3.8px;
+
+}
+.content__location--text > p {
+    text-align: left;
+}
+
+.content__location--text p{
+    margin: 15px 0;
+}
+
+.location__text--title {
+    font-weight: bold;
+}
+
+.location__text--time{
+    opacity: 0.60;
+}
+
+.location__text--button {
+    width: 50%;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    background-color: black;
+    color: white;
+    border: 0;
+}
+
+.location__text--button:hover {
+    background-color: #ccc;
+    color: black;
+
+}
+
+/*_________________Kết thúc tourDates LOCATION_________*/
