@@ -353,7 +353,153 @@
 .location__text--button:hover {
     background-color: #ccc;
     color: black;
-
 }
 
 /*_________________Kết thúc tourDates LOCATION_________*/
+
+/*_________________Kết thúc TOURDATES___________________ */
+
+
+
+/*___________________Contact___________________________ */
+.contact {
+    width: 100%;
+    padding: 64px 16px;
+    margin: 0 auto;
+    background: white;
+    color: black;
+    order: 4;
+}
+
+.contact__title{
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.contact__slogan{
+    font-size: 15px;
+    margin: 15px 0;
+    opacity: 0.60;
+    font-style: italic;
+    text-align: center;
+}
+
+.contact--information__content{
+    max-width: 800px;
+    padding: 32px 0;
+    display: flex;
+    flex-direction: row;  
+    margin: 0 auto;
+}
+
+.information__content--in4{
+    width: 50%;
+    margin: 0 0 16px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.information__content--input{
+    display: grid;
+    grid-template-areas:
+    "name name email email"
+    "mess mess mess mess"
+    "none none none send"
+}
+
+.input--name {
+    grid-area: name;
+    margin-bottom:8px;
+    margin-right: 4px;
+
+}
+
+.input--email {
+    grid-area: email;
+    margin-bottom:8px;    
+    margin-left: 4px;
+
+
+
+}
+
+.input--message{
+    grid-area: mess;
+}
+
+.input--in4{
+    padding: 8px;
+}
+
+.input--button {
+    grid-area: send;
+    color: white;
+    background: black;
+    margin: 16px 0;
+    padding: 8px 16px;
+}
+
+.input--button:hover {
+    color: black;
+    background: #ccc; 
+    border: none;
+}
+/*___________________Kết thúc contact________________ */
+
+/*________________Background______________ */
+#background{
+    width: 100vw;
+    order: 5;
+}
+
+#background > img {
+    width: 100%;
+    height:auto;
+}
+/*_______________Kết thúc phần background_______________ */
+
+/* _______________Footer__________________*/
+#footer{
+    padding: 64px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer--group__autor{
+    width: 100%;
+    opacity: 0.60;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.footer--group__autor a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer--group__autor a::before{
+    content: " ";
+}
+
+.footer--group__icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.footer--group__icon > a{
+    color: black;
+}
+
+/* _________________KẾt thúc footer__________________*/
